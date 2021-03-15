@@ -26,13 +26,14 @@ export const HeroItems = styled.div`
     height:100vh;
     max-height:100%;
     padding: 0 2rem;
-    width:650px;
+    width:75%;
     color:#fff;
     text-transformation:uppercase;
     line-height:1;
     font-weight:bold;
-
-
+    position:relative;
+    margin:0 auto;
+    text-align:center;
     @media screen and (max-width: 650px) {
         width:100%;
     }
@@ -41,14 +42,15 @@ export const HeroItems = styled.div`
 export const HeroH1 = styled.h1`
     font-size:clamp(2.5rem, 10vw, 5rem);
     margin-bottom: 1rem;
-    box-shadow:3px 5px #e9ba23;
+    margin-left:296px;
+
+    margin-top:-360px;
     letter-spacing:3px;
 
 
-
-    @media screen and (max-width: 768px) {
-        margin-top:220px;
-        margin-left:-16px;
+    @media screen and (max-width: 768px) { 
+        margin-top:-220px;
+        margin-left:56px;
     }
 `
 
@@ -57,6 +59,8 @@ export const HeroP = styled.p`
     margin-bottom: 2rem;
     @media screen and (max-width: 768px) {
         margin-left:-16px;
+        font-size:24px;
+        margin-top:24px;
     }
 `
 
