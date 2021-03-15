@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import ImgBg from '../../images/cinema.jpg'
+import {Link} from 'react-scroll'
 
 
 export const HeroContainer = styled.div`
@@ -42,7 +43,7 @@ export const HeroItems = styled.div`
 export const HeroH1 = styled.h1`
     font-size:clamp(2.5rem, 10vw, 5rem);
     margin-bottom: 1rem;
-    margin-left:296px;
+    margin-left:324px;
 
     margin-top:-360px;
     letter-spacing:3px;
@@ -64,31 +65,30 @@ export const HeroP = styled.p`
     }
 `
 
-export const HeroBtn = styled.button`
-    font-size:1.4rem;
-    padding:1rem 2rem;
-    border:none;
-    background: #e31837;
-    color:#fff;
-    transition: 0.2s ease-out;
+
+const HeroButton = styled(Link)`
+    border-radius: 50px;
+    background: ${({primary}) => (primary ? 'linear-gradient(90deg,#cf7500,#CCA459)' : 'linear-gradient(90deg,#cf7500,#CCA459)')
+    };
+    white-space: nowrap;
+    padding: ${({big}) => (big ? '14px 48px' : '12px 30px')
+    };
+    color: ${({dark}) => (dark ? '#010606' : ' #010606')
+    };
+    font-size: ${({fontBig}) => (fontBig ? '20px' : ' 16px')
+    };
+
+    outline:none;
     display:flex;
-    justify-content:center;
+    jusify-conten:center;
     align-items:center;
-    text-align:left;
-    border-radius:32px;
-
+    transition: all 0.2s ease-in-out;
+    cursor:pointer;
+    font-weight:700;
     &:hover{
-        background: #ffc500;
-        transition: 0.2s ease-out;
-        cursor:pointer;
-    }
-    @media screen and (max-width: 768px) {
+        transition: all 0.2s ease-in-out;
+        color:${({dark}) => (dark ? '#010606':'#fff')};
+        background: ${({primary}) => (primary ? 'linear-gradient(90deg,#cf7500,#f4f4f4)' : '#010606')};
 
-        p{
-            margin-top:-10px;
-        }
-        margin-left:-16px;
-        height:48px;
-        
     }
 `;
