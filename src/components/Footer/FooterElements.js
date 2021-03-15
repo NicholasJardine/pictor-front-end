@@ -59,7 +59,7 @@ import {Link} from 'react-router-dom'
     text-decoration:none;
 
     &:hover{
-        color: #01bf71;
+        color: #CCA459;
         transition: 0.3s ease-out
     }
     `

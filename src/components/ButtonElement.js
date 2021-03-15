@@ -19,10 +19,13 @@ const Button = styled(Link)`
     align-items:center;
     transition: all 0.2s ease-in-out;
     cursor:pointer;
-
+    font-weight:700;
     &:hover{
         transition: all 0.2s ease-in-out;
-        background: ${({primary}) => (primary ? '#fff' : '#01BF71')};
+        color:#010606;
+        background: ${({primary}) => (primary ? '#CCA459' : '#CCA459')};
+        border:solid 2px;
+        border-color: ${({primary}) => (primary ? '#fff' : '#010606')};
     }
 `;
 
