@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavMenu,NavLinks, NavBtn, NavBtnLink} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavMenu,NavLinks, NavBtn, NavBtnLink, NavLogoImage} from './NavbarElements';
 import {IconContext} from 'react-icons/lib'
+import picone from '../../images/logo.png';
 
 import {animateScroll as scroll} from 'react-scroll';
 const Navbar = ({toggle}) => {
@@ -30,7 +31,7 @@ const Navbar = ({toggle}) => {
        <NavbarContainer>
 
            <NavLogo to="/" onClick={toggleHome}>
-              Golden 
+             <NavLogoImage src ={picone}/>
            </NavLogo>
             <MobileIcon onClick={toggle}>
                 <FaBars></FaBars>
