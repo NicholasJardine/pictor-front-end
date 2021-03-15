@@ -22,7 +22,7 @@ const Button = styled(Link)`
     font-weight:700;
     &:hover{
         transition: all 0.2s ease-in-out;
-        color:${({primary}) => (primary ? '#010606':'#f4f4f4)' )};
+        color:${({dark}) => (dark ? '#010606':'#fff')};
         background: ${({primary}) => (primary ? 'linear-gradient(90deg,#cf7500,#f4f4f4)' : '#010606')};
 
     }
