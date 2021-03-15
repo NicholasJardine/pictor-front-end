@@ -3,12 +3,12 @@ import {Link} from 'react-scroll'
 
 const Button = styled(Link)`
     border-radius: 50px;
-    background: ${({primary}) => (primary ? '#CCA459' : '#010606')
+    background: ${({primary}) => (primary ? 'linear-gradient(90deg,#cf7500,#CCA459)' : 'linear-gradient(90deg,#cf7500,#CCA459)')
     };
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')
     };
-    color: ${({dark}) => (dark ? '#010606' : ' #fff')
+    color: ${({dark}) => (dark ? '#010606' : ' #010606')
     };
     font-size: ${({fontBig}) => (fontBig ? '20px' : ' 16px')
     };
@@ -22,11 +22,13 @@ const Button = styled(Link)`
     font-weight:700;
     &:hover{
         transition: all 0.2s ease-in-out;
-        color:#010606;
-        background: ${({primary}) => (primary ? '#CCA459' : '#CCA459')};
-        border:solid 2px;
-        border-color: ${({primary}) => (primary ? '#fff' : '#010606')};
+        color:${({primary}) => (primary ? '#010606':'#f4f4f4)' )};
+        background: ${({primary}) => (primary ? 'linear-gradient(90deg,#cf7500,#f4f4f4)' : '#010606')};
+
     }
 `;
 
 export default Button
+
+
+
