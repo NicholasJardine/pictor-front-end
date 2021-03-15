@@ -49,7 +49,7 @@ const Hero = () => {
                 <HeroH1>Pictor</HeroH1>
                     <HeroP>The best platform for online auditions for actors and casting agents/production companies.</HeroP>
                     {/* <HeroBtn><p>Place Order</p></HeroBtn> */}
-                    <HeroButton> Learn More</HeroButton>
+                    <HeroButton to='about' smooth={true} duration={500} spy={true} exact='true' offset= {-80}> Learn More</HeroButton>
                 </HeroItems>
             </HeroContent>
         </HeroContainer>

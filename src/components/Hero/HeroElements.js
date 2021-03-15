@@ -41,9 +41,9 @@ export const HeroItems = styled.div`
 `;
 
 export const HeroH1 = styled.h1`
-    font-size:clamp(2.5rem, 10vw, 5rem);
-    margin-bottom: 1rem;
-    margin-left:324px;
+    font-size:clamp(2.5rem, 10vw, 4rem);
+    margin-bottom: 2rem;
+    margin-left:340px;
 
     margin-top:-360px;
     letter-spacing:3px;
@@ -52,11 +52,13 @@ export const HeroH1 = styled.h1`
     @media screen and (max-width: 768px) { 
         margin-top:-220px;
         margin-left:56px;
+        margin-bottom: 1rem;
+
     }
 `
 
 export const HeroP = styled.p`
-    font-size:clamp(2rem, 2.5vw, 3rem);
+    font-size:clamp(2rem, 2.5vw, 2.5rem);
     margin-bottom: 2rem;
     @media screen and (max-width: 768px) {
         margin-left:-16px;
