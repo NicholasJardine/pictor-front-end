@@ -7,6 +7,9 @@ import {LatestContainer, LatestP, LatestH2, LatestH1, LatestIcon, LatestCard, La
 
 
 const Latest = () => {
+
+
+
     return (
         <LatestContainer id="Latest">
             <LatestH1>Latest</LatestH1>

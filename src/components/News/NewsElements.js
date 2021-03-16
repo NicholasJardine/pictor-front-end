@@ -13,7 +13,7 @@ export const NewsContainer = styled.div`
 
 export const NewsWrapper = styled.div`
     z-index: 1;
-    height:860px;
+    height:600px;
     width:100%;
     // position:absolute;
     padding: 0 24px;

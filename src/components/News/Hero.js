@@ -5,13 +5,13 @@ import { Button } from './Button'
 import {IoMdArrowRoundForward} from 'react-icons/io'
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5'
 const HeroSection = styled.section`
-    height:100vh;
-    max-height: 1100px;
+    height:60vh;
+    max-height: 660px;
     position:relative;
     overflow:hidden;
 `
 const HeroWrapper = styled.div`
-    width:100%;
+    width:75%;
     height:100%;
     display:flex;
     justify-content:center;

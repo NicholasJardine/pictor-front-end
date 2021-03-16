@@ -7,7 +7,14 @@ import { homeObjOne, homeObjTwo } from './components/InfoSection/data';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import News from './components/News';
+import React, { useState, useRef, useEffect } from 'react'
+
 function App() {
+
+  const [isOpen, setIsOpen] = useState(false)
+  const toggle = () => {
+    setIsOpen(!isOpen)
+  }
   return (
     <Router>
       <Navbar/>
