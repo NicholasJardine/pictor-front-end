@@ -15,18 +15,7 @@ const News = ({lightBg, img, id, imgStart, description, topLine, lightText, dark
     return (
         <>
                             <Hero slides={SliderData} isOpen={isOpen} toggle={toggle}/>
-          {/* <NewsContainer>
-              
-                <NewsWrapper>
-                
-                    <NewsRow>
-
-
-
-
-                    </NewsRow>
-                </NewsWrapper>    
-          </NewsContainer>   */}
+  
           <Latest></Latest>
         </>
     )

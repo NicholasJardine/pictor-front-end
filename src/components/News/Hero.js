@@ -55,7 +55,7 @@ const HeroImage = styled.img`
    position:absolute;
    top:0;
    left:0;
-   width:100vw;
+   width:75vw;
    height:100vh;
    object-fit:cover;
 `
