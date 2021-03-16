@@ -29,6 +29,26 @@ const HeroSlide = styled.div`
     width:100%;
     height:100%;
 `
+const Industry = styled.div`
+    z-index:1;
+    width:100%;
+    height:auto;
+    background:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    h1{
+        font-size:4rem;
+        font-weight:400;
+        text-transform:uppercase;
+        text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+        text-align:left;
+        margin-bottom:56px;
+        margin-top:56px;
+    }
+ 
+`
 
 const HeroSlider = styled.div`
    position:absolute;
@@ -78,6 +98,14 @@ const HeroContent = styled.div`
        text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
        text-align:left;
        margin-bottom:0.8rem;
+       margin-top: -180px;
+   }
+
+   @media screen and (max-width:768px){
+
+    h1{
+        margin-top:auto;
+    }
    }
     
    p{
@@ -164,27 +192,36 @@ const Hero = ({slides}) => {
     }; 
     return (
         <HeroSection>
+            <Industry><h1>Industry News</h1></Industry>
             <HeroWrapper>
                 {slides.map((slide, index) => {
                     return(
+                        <>
 
                         <HeroSlide key={index}>
                             {index === current && (
+
+                                
+                                    
                             <HeroSlider>
+
+                                
                             <HeroImage src={slide.image} alt={slide.alt} />
                             <HeroContent>
-                                <h1>{slide.title}</h1>
-                                <p>{slide.price}</p>
-                                <Button to ={slide.path} primary='true' css={`max-width:160px;`}>
-                                    {slide.label}
-                                    <Arrow />
-                                </Button>
-                            </HeroContent>
+                        <h1>{slide.title}</h1>
+                        <p>{slide.price}</p>
+                        <Button to ={slide.path} primary='true' css={`max-width:160px;`}>
+                            {slide.label}
+                            <Arrow />
+                        </Button>
+                    </HeroContent>
+                        
                         </HeroSlider>
 
                             )}
 
                         </HeroSlide>
+                        </>
                     );
                 })}
 
