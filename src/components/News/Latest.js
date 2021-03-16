@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Icon1 from '../../images/awards.svg'
-import Icon2 from '../../images/videos.svg'
+import Icon2 from '../../images/video.svg'
 import Icon3 from '../../images/logo.png'
 import {LatestContainer, LatestP, LatestH2, LatestH1, LatestIcon, LatestCard, LatestWrapper} from './NewsElements'
 
@@ -9,7 +9,7 @@ import {LatestContainer, LatestP, LatestH2, LatestH1, LatestIcon, LatestCard, La
 const Latest = () => {
     return (
         <LatestContainer id="Latest">
-            <LatestH1>Our Latest</LatestH1>
+            <LatestH1>Latest</LatestH1>
             <LatestWrapper>
 
                 <LatestCard>

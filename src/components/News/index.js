@@ -19,6 +19,7 @@ const News = ({lightBg, img, id, imgStart, description, topLine, lightText, dark
                     </NewsRow>
                 </NewsWrapper>    
           </NewsContainer>  
+          <Latest></Latest>
         </>
     )
 }
