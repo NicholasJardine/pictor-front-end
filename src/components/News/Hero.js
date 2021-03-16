@@ -39,12 +39,12 @@ const Industry = styled.div`
     align-items:center;
     color:#fff;
     h1{
-        font-size:4rem;
+        font-size:3rem;
         font-weight:400;
         text-transform:uppercase;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
         text-align:left;
-        margin-bottom:56px;
+        margin-bottom:0.8rem;
         margin-top:56px;
     }
  
@@ -191,8 +191,10 @@ const Hero = ({slides}) => {
         console.log(current);
     }; 
     return (
+        <>
+                    <Industry><h1>Industry News</h1></Industry>
+
         <HeroSection>
-            <Industry><h1>Industry News</h1></Industry>
             <HeroWrapper>
                 {slides.map((slide, index) => {
                     return(
@@ -231,6 +233,7 @@ const Hero = ({slides}) => {
                 </SliderButtons>
             </HeroWrapper>
         </HeroSection>
+        </>
     )
 }
 
