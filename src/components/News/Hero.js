@@ -9,6 +9,8 @@ const HeroSection = styled.section`
     max-height: 660px;
     position:relative;
     overflow:hidden;
+    margin:0 auto;
+    background:black;
 `
 const HeroWrapper = styled.div`
     width:75%;
@@ -18,6 +20,7 @@ const HeroWrapper = styled.div`
     align-items:center;
     overflow:hidden;
     position:relative;
+    margin:0 auto;
 
 `;
 
@@ -31,12 +34,11 @@ const HeroSlider = styled.div`
    position:absolute;
    top:0;
    left:0;
-   width:100%;
+   width:75%;
    height:100%;
    display:flex;
    align-items:center;
    justify-content:center; 
-
    &::before {
        content: '';
        position:absolute;
