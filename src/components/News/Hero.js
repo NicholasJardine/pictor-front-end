@@ -44,7 +44,7 @@ const Industry = styled.div`
         text-transform:uppercase;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
         text-align:left;
-        margin-bottom:0.8rem;
+        margin-bottom:56px;
         margin-top:56px;
     }
  
