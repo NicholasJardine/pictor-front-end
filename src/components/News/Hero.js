@@ -23,6 +23,7 @@ const HeroWrapper = styled.div`
     position:relative;
     margin:0 auto;
     // box-shadow: #fff 0px 5px 15px;
+    border-radius:8px;
 `;
 
 const HeroSlide = styled.div`
@@ -63,8 +64,8 @@ overflow: hidden
 const HeroImage = styled.img`
 flex-shrink: 0;
 min-width: 100%;
-min-height: 100%
-   
+min-height: 100%;
+
 `
 const HeroContent = styled.div`
 

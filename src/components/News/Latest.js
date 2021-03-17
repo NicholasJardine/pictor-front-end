@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Icon1 from '../../images/awards.svg'
-import Icon2 from '../../images/video.svg'
-import Icon3 from '../../images/logo.png'
+import Icon1 from '../../images/pearl.webp'
+import Icon2 from '../../images/single.jpeg'
+import Icon3 from '../../images/cousins.jpeg'
 import {LatestContainer, LatestP, LatestH2, LatestH1, LatestIcon, LatestCard, LatestWrapper} from './NewsElements'
 
 
