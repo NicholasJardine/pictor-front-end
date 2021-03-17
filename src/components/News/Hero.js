@@ -5,12 +5,13 @@ import { Button } from './Button'
 import {IoMdArrowRoundForward} from 'react-icons/io'
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5'
 const HeroSection = styled.section`
-    height:60vh;
+    height:70vh;
     max-height: 660px;
-    position:relative;
+    // position:relative;
     overflow:hidden;
-    margin:0 auto;
-    background:black;
+    // margin:0 auto;
+    background:#010606;
+    padding-bottom:40px;
     
 `
 const HeroWrapper = styled.div`
@@ -24,6 +25,7 @@ const HeroWrapper = styled.div`
     margin:0 auto;
     // box-shadow: #fff 0px 5px 15px;
     border-radius:8px;
+    margin-bottom:60px;
 `;
 
 const HeroSlide = styled.div`
@@ -35,7 +37,7 @@ const Industry = styled.div`
     z-index:1;
     width:100%;
     height:auto;
-    background:black;
+    background:#010606;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -107,7 +109,7 @@ margin:0
 z-index:1;
 width:100%;
 height:auto;
-background:black;
+background:#010606;
 display:flex;
 justify-content:center;
 align-items:center;
