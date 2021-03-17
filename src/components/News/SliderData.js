@@ -1,5 +1,5 @@
 import ImageOne from '../../images/logo.png'
-import ImageTwo from '../../images/video.svg'
+import ImageTwo from '../../images/single.jpeg'
 import ImageThree from '../../images/awards.svg'
 
 

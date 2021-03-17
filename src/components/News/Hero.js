@@ -11,6 +11,7 @@ const HeroSection = styled.section`
     overflow:hidden;
     margin:0 auto;
     background:black;
+    
 `
 const HeroWrapper = styled.div`
     width:50%;
@@ -21,7 +22,7 @@ const HeroWrapper = styled.div`
     overflow:hidden;
     position:relative;
     margin:0 auto;
-
+    // box-shadow: #fff 0px 5px 15px;
 `;
 
 const HeroSlide = styled.div`
@@ -52,35 +53,18 @@ const Industry = styled.div`
 `
 
 const HeroSlider = styled.div`
-   position:absolute;
-   top:0;
-   left:0;
-   width:50%;
-   height:100%;
-   display:flex;
-   align-items:center;
-   justify-content:center; 
-   &::before {
-       content: '';
-       position:absolute;
-       z-index:2;
-       width:100%;
-       height:100vh;
-       bottom:0vh;
-       left:0;
-       overflow:hidden;
-       opacity:0.4;
-       background: linear-gradient(0deg, rgba(0,0,0,0.2)0%, rgba(0,0,0,0.2)50%, rgba(0,0,0,0.6)100% );
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden
 
    }
 `
 const HeroImage = styled.img`
-   position:absolute;
-   top:0;
-   left:0;
-   width:50vw;
-   height:100vh;
-   object-fit:cover;
+flex-shrink: 0;
+min-width: 100%;
+min-height: 100%
+   
 `
 const HeroContent = styled.div`
 
