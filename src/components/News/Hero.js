@@ -249,7 +249,6 @@ const Hero = ({slides}) => {
                                 
                                     
                             <HeroSlider>
-<HeroTitleWrapper><h1>{slide.title}</h1></HeroTitleWrapper>
 
                                 
                         
