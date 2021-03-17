@@ -3,7 +3,7 @@ import React from 'react'
 import Icon1 from '../../images/pearl.webp'
 import Icon2 from '../../images/single.jpeg'
 import Icon3 from '../../images/cousins.jpeg'
-import {LatestContainer, LatestP, LatestH2, LatestH1, LatestIcon, LatestCard, LatestWrapper} from './NewsElements'
+import {LatestContainer, LatestP, LatestH2, LatestH1, LatestH11, LatestIcon, LatestCard, LatestWrapper} from './NewsElements'
 
 
 const Latest = () => {
@@ -12,6 +12,8 @@ const Latest = () => {
 
     return (
         <LatestContainer id="Latest">
+                        <LatestH11>Pictor Online</LatestH11>
+
             <LatestH1>Latest</LatestH1>
             <LatestWrapper>
 

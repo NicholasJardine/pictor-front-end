@@ -43,7 +43,7 @@ const Industry = styled.div`
     color:#fff;
     h1{
         font-size:3rem;
-        font-weight:400;
+        font-weight:700;
         text-transform:uppercase;
         text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
         text-align:left;
