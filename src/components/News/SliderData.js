@@ -1,6 +1,6 @@
-import ImageOne from '../../images/logo.png'
+import ImageOne from '../../images/pearl.webp'
 import ImageTwo from '../../images/single.jpeg'
-import ImageThree from '../../images/awards.svg'
+import ImageThree from '../../images/cousins.jpeg'
 
 
 export const SliderData = [
