@@ -13,7 +13,7 @@ const HeroSection = styled.section`
     background:black;
 `
 const HeroWrapper = styled.div`
-    width:75%;
+    width:50%;
     height:100%;
     display:flex;
     justify-content:center;
@@ -55,7 +55,7 @@ const HeroSlider = styled.div`
    position:absolute;
    top:0;
    left:0;
-   width:75%;
+   width:50%;
    height:100%;
    display:flex;
    align-items:center;
@@ -78,7 +78,7 @@ const HeroImage = styled.img`
    position:absolute;
    top:0;
    left:0;
-   width:75vw;
+   width:50vw;
    height:100vh;
    object-fit:cover;
 `
