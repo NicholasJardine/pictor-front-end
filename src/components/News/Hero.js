@@ -35,6 +35,7 @@ const Industry = styled.div`
     height:auto;
     background:black;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
     color:#fff;
@@ -92,14 +93,15 @@ const HeroContent = styled.div`
    color:#fff;
    padding-left:40px;
    h1{
+       position:absolute;
        fontsize: clamp(1rem, 8vw, 2rem);
        font-weight:400;
        text-transform:uppercase;
        text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
        text-align:left;
        margin-bottom:0.8rem;
-       margin-top: -180px;
-   }
+       top: -140px;
+       left: -50px;  }
 
    @media screen and (max-width:768px){
 
@@ -113,6 +115,30 @@ const HeroContent = styled.div`
        text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
    }
 `
+
+const HeroTitleWrapper = styled.div`
+position:relative;
+margin:0
+z-index:1;
+width:100%;
+height:auto;
+background:black;
+display:flex;
+justify-content:center;
+align-items:center;
+color:#fff;
+h1{
+    position:relative;
+    font-size:2rem;
+    font-weight:400;
+    text-transform:uppercase;
+    text-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+    text-align:center;
+    margin-bottom:56px;
+
+}
+
+`;
 const Arrow = styled(IoMdArrowRoundForward)`
 margin-left:0.5rem;      
 `
@@ -192,14 +218,58 @@ const Hero = ({slides}) => {
     }; 
     return (
         <>
-                    <Industry><h1>Industry News</h1></Industry>
+                    <Industry>
+                        
+                        <h1>Industry News</h1>
+                        {slides.map((slide, index) => {
+                    return(
+                        <>
+                        
+                        <HeroSlide key={index}>
+                            {index === current && (
+
+                                
+                                    
+<HeroTitleWrapper><h1>{slide.title}</h1></HeroTitleWrapper>
+
+                                
+                           
+
+
+
+                        
+
+                            )}
+
+                        </HeroSlide>
+
+                        <HeroSlide key={index}>
+                            {index === current && (
+
+                                
+                                    
+                            <HeroSlider>
+<HeroTitleWrapper><h1>{slide.title}</h1></HeroTitleWrapper>
+
+                                
+                        
+                        </HeroSlider>
+
+                            )}
+
+                        </HeroSlide>
+                        </>
+                    );
+                })}
+                        
+                        </Industry>
 
         <HeroSection>
             <HeroWrapper>
                 {slides.map((slide, index) => {
                     return(
                         <>
-
+                        
                         <HeroSlide key={index}>
                             {index === current && (
 
@@ -209,14 +279,33 @@ const Hero = ({slides}) => {
 
                                 
                             <HeroImage src={slide.image} alt={slide.alt} />
-                            <HeroContent>
-                        <h1>{slide.title}</h1>
-                        <p>{slide.price}</p>
+
+
+
+                            {/* <HeroContent> */}
+                        {/* <h1>{slide.title}</h1> */}
+{/*                         
                         <Button to ={slide.path} primary='true' css={`max-width:160px;`}>
                             {slide.label}
                             <Arrow />
-                        </Button>
-                    </HeroContent>
+                        </Button> */}
+                    {/* </HeroContent> */}
+                        
+                        </HeroSlider>
+
+                            )}
+
+                        </HeroSlide>
+
+                        <HeroSlide key={index}>
+                            {index === current && (
+
+                                
+                                    
+                            <HeroSlider>
+{/* <HeroTitleWrapper><h1>{slide.title}</h1></HeroTitleWrapper> */}
+
+                                
                         
                         </HeroSlider>
 
