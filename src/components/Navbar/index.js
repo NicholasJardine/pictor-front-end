@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavMenu,NavLinks, NavBtn, NavBtnLink, NavLogoImage} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavMenu,NavLinks, NavBtn, NavBtnLink, NavLogoImage, OpenIcon} from './NavbarElements';
 import {IconContext} from 'react-icons/lib'
 import picone from '../../images/logo.png';
 
@@ -26,7 +26,8 @@ const Navbar = ({toggle}) => {
 
     return (
 <> 
-<IconContext.Provider value={{color:'#fff'}}>
+<IconContext.Provider value={{color:'#CCA459'
+}}>
     <Nav>
        <NavbarContainer>
 
@@ -34,7 +35,7 @@ const Navbar = ({toggle}) => {
              <NavLogoImage src ={picone}/>
            </NavLogo>
             <MobileIcon onClick={toggle}>
-                <FaBars></FaBars>
+                <OpenIcon></OpenIcon>
             </MobileIcon>
             <NavMenu>
             <NavItem>

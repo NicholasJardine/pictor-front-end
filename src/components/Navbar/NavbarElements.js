@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
+import {FaBars} from 'react-icons/fa'
+
 // background:${({scrollNav}) => (scrollNav ? '#000' : 'transparernt')};
 export const Nav = styled.nav`
     background:#000;
@@ -27,7 +29,9 @@ export const NavbarContainer = styled.div`
     max-width: 1100px;
     padding: 0 24px;
 `
-
+export const OpenIcon = styled(FaBars)`
+    color:#CCA459;
+`;
 export const NavLogo = styled(LinkR)`
     color:#fff;
     height:80px;
@@ -73,7 +77,7 @@ export const MobileIcon = styled.div`
         transform: translate(-100%, 60%);
         font-size: 1.8rem;
         cursor:pointer;
-        color:#fff;
+        color:#CCA459;
     }
 `;
 
