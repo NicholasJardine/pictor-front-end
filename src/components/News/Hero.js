@@ -203,7 +203,7 @@ const Hero = ({slides}) => {
     }; 
     return (
         <>
-                    <Industry>
+                    <Industry id="latest">
                         
                         <h1>Industry News</h1>
                         {slides.map((slide, index) => {

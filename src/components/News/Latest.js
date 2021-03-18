@@ -11,7 +11,7 @@ const Latest = () => {
 
 
     return (
-        <LatestContainer id="Latest">
+        <LatestContainer >
                         <LatestH11>Pictor Online</LatestH11>
 
             <LatestH1>Latest</LatestH1>
