@@ -21,10 +21,7 @@ function App() {
   return (
     <Router>
 
-<Switch>
-      {/* <Route path="/" component={Home} exact /> */}
-      <Route path="/signin" component={SigninPage} exact />
-      </Switch>
+
               <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
 
       <Navbar toggle={toggle}/>
@@ -34,6 +31,11 @@ function App() {
         <InfoSection {...homeObjTwo} />
         <News/>
         <Footer/>
+
+        <Switch>
+      {/* <Route path="/" component={Home} exact /> */}
+      <Route path="/signin" component={SigninPage} exact />
+      </Switch>
     </Router>
   );
 }
