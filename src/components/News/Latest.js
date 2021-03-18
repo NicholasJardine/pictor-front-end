@@ -20,20 +20,23 @@ const Latest = () => {
                 <LatestCard>
 
                     <LatestIcon src={Icon1}/>
-                    <LatestH2>Reduce Expenses</LatestH2>
-                    <LatestP> We help reduce your fees and increase your overall revenue.</LatestP>
+                    <LatestH2>Pearl Thusi shares some tips</LatestH2>
+                    <LatestP> Some useful advice from one of SA's finest.
+
+                    </LatestP>
                 </LatestCard>
 
                 <LatestCard>
                     <LatestIcon src={Icon2}/>
-                    <LatestH2>Virtual Offices</LatestH2>
-                    <LatestP> You can access our platform online anywhere in the world.</LatestP>
+                    <LatestH2>Something worth Watching</LatestH2>
+                    <LatestP> Seriously single - netflix and south africa's potential.</LatestP>
                 </LatestCard>
 
                 <LatestCard>
                     <LatestIcon src={Icon3}/>
-                    <LatestH2>Premium Benefits</LatestH2>
-                    <LatestP>Unlock our special membership card that returns 5% cash back.</LatestP>
+                    <LatestH2>Reflecting on a Masterpiece
+</LatestH2>
+                    <LatestP>We take a look at what it took to create this classic film.</LatestP>
                 </LatestCard>
 
             </LatestWrapper>

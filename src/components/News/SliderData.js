@@ -4,21 +4,21 @@ import ImageThree from '../../images/cousins.jpeg'
 
 
 export const SliderData = [
-{title: 'Comfortable apartment in Johannesburg',
+{title: 'Pearl Thusi shares some tips',
 price: 'R750000',
 path: '/homes',
 label: "View Home",
 image:ImageOne,
 alt: 'House'},
 
-{title: '2 Bedroom House, JHB South',
+{title: 'Something worth Watching',
 price: 'R850000',
 path: '/homes',
 label: "View Home",
 image:ImageTwo,
 alt: 'House'},
 
-{title: 'Your Dream house. 3 bed 3 bath',
+{title: 'Reflecting on a Masterpiece',
 price: 'R1050000',
 path: '/homes',
 label: "View Home",
