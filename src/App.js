@@ -9,6 +9,9 @@ import Hero from './components/Hero';
 import News from './components/News';
 import React, { useState, useRef, useEffect } from 'react'
 import Sidebar from './components/Sidebar'
+
+// import Home from './pages'
+import SigninPage from './pages/signin';
 function App() {
 
   const [isOpen, setIsOpen] = useState(false)
@@ -17,6 +20,11 @@ function App() {
   }
   return (
     <Router>
+
+<Switch>
+      {/* <Route path="/" component={Home} exact /> */}
+      <Route path="/signin" component={SigninPage} exact />
+      </Switch>
               <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
 
       <Navbar toggle={toggle}/>
@@ -31,3 +39,4 @@ function App() {
 }
 
 export default App;
+
