@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import Hero from './components/Hero';
 import News from './components/News';
 import React, { useState, useRef, useEffect } from 'react'
-
+import Sidebar from './components/Sidebar'
 function App() {
 
   const [isOpen, setIsOpen] = useState(false)
@@ -17,7 +17,9 @@ function App() {
   }
   return (
     <Router>
-      <Navbar/>
+              <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
+
+      <Navbar toggle={toggle}/>
       <Hero/>
 
       <InfoSection {...homeObjOne} />

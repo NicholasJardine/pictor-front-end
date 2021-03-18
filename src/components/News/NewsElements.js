@@ -174,17 +174,15 @@ export const LatestH1 = styled.h1`
         font-size: 2rem;
     }
 `
-
 export const LatestH11 = styled.h1`
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #fff;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px){
-        font-size: 2rem;
+        font-size: 3.5rem;
     }
 `
-
 export const LatestH2 = styled.h2`
     font-size: 1rem;
     margin-bottom: 10px;

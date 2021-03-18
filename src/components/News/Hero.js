@@ -11,7 +11,7 @@ const HeroSection = styled.section`
     overflow:hidden;
     // margin:0 auto;
     background:#010606;
-    padding-bottom:40px;
+        padding-bottom:40px;
     
 `
 const HeroWrapper = styled.div`
@@ -109,7 +109,7 @@ margin:0
 z-index:1;
 width:100%;
 height:auto;
-background:#010606;
+background:    background:#101522;
 display:flex;
 justify-content:center;
 align-items:center;
