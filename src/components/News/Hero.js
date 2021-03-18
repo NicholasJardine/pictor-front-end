@@ -11,7 +11,8 @@ const HeroSection = styled.section`
     overflow:hidden;
     // margin:0 auto;
     background:#010606;
-        padding-bottom:40px;
+    padding-bottom:40px;
+    z-index:-1;
     
 `
 const HeroWrapper = styled.div`
@@ -59,20 +60,17 @@ const HeroSlider = styled.div`
 display: flex;
 justify-content: center;
 align-items: center;
-overflow: hidden
-
-   }
+overflow: hidden;
 `
 const HeroImage = styled.img`
 flex-shrink: 0;
 min-width: 100%;
 min-height: 100%;
-
 `
 const HeroContent = styled.div`
 
    position:relative;
-   z-index:10;
+   z-index:-10;
    display:flex;
    flex-direction:column;
    max-width:1600px;
@@ -170,7 +168,7 @@ const SliderButtons = styled.div`
     bottom:50px;
     right: 50px;
     display:flex;
-    z-index:10;
+    z-index:1;
 `
 const Hero = ({slides}) => {
     const[current, setCurrent] = useState(0);
