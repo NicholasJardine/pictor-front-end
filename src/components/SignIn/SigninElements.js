@@ -30,8 +30,9 @@ export const FormButton = styled.button`
 
     color:#fff;
     font-size:20px;
-    background: #01bf71;
-    padding: 16px 0;
+    background: ${({primary}) => (primary ? 'linear-gradient(90deg,#cf7500,#CCA459)' : 'linear-gradient(90deg,#cf7500,#CCA459)')
+    };
+        padding: 16px 0;
     border:none;
     border-radius:4px;
     cursor:pointer;
@@ -84,7 +85,7 @@ export const FormContent = styled.div`
     display:flex;
     flex-direction: column;
     justify-content:center;
-    background:#01BF71;
+    background:#CCA459;
     @media screen and (max-width:480px){
         padding:10px;
         margin-bottom: 0px;
@@ -115,11 +116,10 @@ export const FormWrap = styled.div`
     display:flex;
     flex-direction: column;
     justify-content:center;
-    background: #01BF71;
 
     @media screen and (max-width:480px){
      height:100%;
-    background: #01BF71;
+    background: #CCA459;
     padding-bottom:40px;
     }
 `;
