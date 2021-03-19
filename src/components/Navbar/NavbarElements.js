@@ -55,7 +55,6 @@ export const NavLogoImage = styled.img`
     font-size:1.5rem;
     font-weight: bold;
     text-decoration: none;
-
     @media screen and (max-width:768px){
 
         margin-left: -24px;
@@ -107,7 +106,10 @@ text-decoration: none;
 height:100%;
 cursor:pointer;
 color:white;
-
+&:hover{
+    color: #CCA459;
+    transition: 0.3s ease-out
+}
 &.active{
     border-bottom: 3px solid #CCA459;
 }
