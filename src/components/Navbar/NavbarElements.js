@@ -145,3 +145,16 @@ export const NavBtnLink = styled(LinkR)`
     }
 
 `;
+export const NavBtnLinkTwo= styled(LinkR)`
+display:flex;
+align-items:center;
+text-decoration: none;
+height:100%;
+cursor:pointer;
+color:white;
+&:hover{
+    color: #CCA459;
+    transition: 0.3s ease-out
+}
+
+`;

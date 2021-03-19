@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {FaBars} from 'react-icons/fa'
-import {Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavMenu,NavLinks, NavBtn, NavBtnLink, NavLogoImage, OpenIcon} from './NavbarElements';
+import {Nav, NavbarContainer, NavLogo, MobileIcon, NavItem, NavMenu,NavLinks, NavBtn, NavBtnLink, NavLogoImage, OpenIcon, NavBtnLinkTwo} from './NavbarElements';
 import {IconContext} from 'react-icons/lib'
 import picone from '../../images/logo.png';
 
@@ -51,12 +51,12 @@ const Navbar = ({toggle}) => {
                    <NavLinks to='/'  smooth={true} duration={500} spy={true} exact='true' offset= {-80}>Search Talent</NavLinks> 
                 </NavItem>
                 <NavItem>
-                   <NavLinks to='signup'  smooth={true} duration={500} spy={true} exact='true' offset= {-80}>Sign Up</NavLinks> 
-                </NavItem>
+                <NavBtnLinkTwo primary={true} to="/signup">Sign Up</NavBtnLinkTwo>                </NavItem>
             </NavMenu>
             <NavBtn>
                 <NavBtnLink primary={true} to="/signin">Sign In</NavBtnLink>
             </NavBtn>
+
 
        </NavbarContainer>
         
