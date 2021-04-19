@@ -6,7 +6,8 @@ const User = (props) => {
  return (
  <div className="user card-container">
  <div className="card" style={style}>
- [...]
+     <h2>Title here</h2>
+      <p>Short description here!</p>
  </div>
  </div>
  );

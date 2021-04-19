@@ -1,3 +1,5 @@
+import {Container, Text, FormButton,FormContent, FormH1, FormLabel, FormInput, FormWrap, Form, Icon} from './SearchElements'
+
 const Search = () => {
     return (
         <>

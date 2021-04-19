@@ -4,6 +4,7 @@ import { setUsers } from '../actions';
 import { render } from '@testing-library/react';
 import React, {Component} from 'react';
 import User from './components/user';
+import users from '../users'
 // [...]
 class UserList extends Component {
     componentWillMount() {
