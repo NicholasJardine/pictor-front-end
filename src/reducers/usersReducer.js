@@ -1,8 +1,11 @@
-const usersReducer = (state, action) => {
+export default function(state, action) {
     if (state === undefined) {
-    // Reducer initialisation
     return [];
     }
-    // TODO: handle some actions
-   };
-   export default usersReducer;
+    switch (action.type) {
+    case 'SET_FLATS':
+    return action.payload;
+    default:
+    return state;
+    }
+   }
