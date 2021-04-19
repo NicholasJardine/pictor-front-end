@@ -13,9 +13,11 @@ const SignUp = () => {
                 <Icon to="/"> Golden </Icon>
                 <FormContent>
                     <Form action = "#">
-                        <FormH1>Sign in to your account</FormH1>
+                        <FormH1>Create an account</FormH1>
                         <FormLabel htmlFor='for'>Email</FormLabel>
-                        <FormInput type='email' required />
+                        <FormInput type='age' required />
+                        <FormLabel htmlFor='for'>Age</FormLabel>
+                        <FormInput type='age' required />
                         <FormLabel htmlFor='for'>Password</FormLabel>
                         <FormInput type='password' required />
                         <FormButton type='submit'>Continue</FormButton>

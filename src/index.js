@@ -4,10 +4,21 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import { Provider } from 'react-redux';
+import { createStore, combineReducers } from 'redux';
+import UsersReducer from './reducers/users_reducer';
+
+const reducers = combineReducers({
+ users: UsersReducer
+}); 
+
 ReactDOM.render(
+
+  <Provider store={createStore(reducers)}>
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </Provider>,
   document.getElementById('root')
 );
 
