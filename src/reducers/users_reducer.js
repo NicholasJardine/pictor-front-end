@@ -3,7 +3,7 @@ export default function(state, action) {
     return [];
     }
     switch (action.type) {
-    case 'SET_FLATS':
+    case 'SET_USERS':
     return action.payload;
     default:
     return state;

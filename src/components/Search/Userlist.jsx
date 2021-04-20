@@ -1,10 +1,9 @@
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { setUsers } from '../actions';
+import { setUsers } from '../../actions';
 import { render } from '@testing-library/react';
 import React, {Component} from 'react';
-import User from './components/user';
-import users from '../users'
+import UserDisplay from './UserDisplay';
 // [...]
 class UserList extends Component {
     componentWillMount() {
@@ -16,7 +15,7 @@ class UserList extends Component {
         return (
         <div>
 
-            {this.props.users.map((user) => <User user={user} key={user.name}/> )}
+            {this.props.users.map((user) => <UserDisplay user={user} key={user.name}/> )}
         </div>
 
         );
@@ -38,5 +37,8 @@ function mapStateToProps(state) {
     users: state.users
     };
    }
+   
+
+
    export default connect(mapStateToProps, mapDispatchToProps)
-   (UserList);
+(UserList);

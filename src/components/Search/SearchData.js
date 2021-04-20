@@ -1,4 +1,4 @@
- const users = [
+const SearchData = [
     {
       "id": 145,
       "name": "Charm at the Steps of the Sacre Coeur/Montmartre",
@@ -54,4 +54,4 @@
       "lng": 2.350774
     }
   ];
-  export default users;
+  export default SearchData;

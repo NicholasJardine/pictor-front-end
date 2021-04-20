@@ -15,9 +15,7 @@ const reducers = combineReducers({
 ReactDOM.render(
 
   <Provider store={createStore(reducers)}>
-  <React.StrictMode>
     <App />
-  </React.StrictMode>
   </Provider>,
   document.getElementById('root')
 );
