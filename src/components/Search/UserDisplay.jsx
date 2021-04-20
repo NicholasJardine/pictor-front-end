@@ -6,7 +6,7 @@ const UserDisplay = (props) => {
  };
  return (
  <div className="user card-container">
- <div className="card-trip" >
+ <div className="card-trip" style={style} >
      
      <FormH1New>{props.user.name}</FormH1New>
       <Text>{props.user.price}</Text>
