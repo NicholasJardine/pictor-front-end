@@ -58,7 +58,13 @@ export const FormH1 = styled.h1`
     font-weight:400;
     text-align:center;
 `;
-
+export const FormH1New = styled.h1`
+    margin-bottom:40px;
+    font-size:20px;
+    color:black;
+    font-weight:400;
+    text-align:center;
+`;
 export const Form = styled.form`
 
     font-weight:400;

@@ -1,17 +1,17 @@
 import React from 'react';
-import {Container, Text, FormButton,FormContent, FormH1, FormLabel, FormInput, FormWrap, Form, Icon} from './SearchElements'
+import {Container, Text, FormButton,FormContent, FormH1,FormH1New, FormLabel, FormInput, FormWrap, Form, Icon} from './SearchElements'
 const UserDisplay = (props) => {
  const style = {
  backgroundImage: `url(${props.user.imageUrl})`
  };
  return (
  <div className="user card-container">
- <div className="card" >
-     <Form>
-     <FormH1>{props.user.name}</FormH1>
+ <div className="card-trip" >
+     
+     <FormH1New>{props.user.name}</FormH1New>
       <Text>{props.user.price}</Text>
 
-     </Form>
+     
 
  </div>
  </div>

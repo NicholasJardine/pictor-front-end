@@ -13,12 +13,13 @@ const Search = () => {
 
                 <Icon to="/"> Golden </Icon>
                 <FormContent>
-
+                    <Form>
+                        <UserList/>
+                    </Form>
                 </FormContent>
             </FormWrap>
 
         </Container>
-        <UserList/>
         </>
 
     )
