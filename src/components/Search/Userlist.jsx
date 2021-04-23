@@ -13,10 +13,15 @@ class UserList extends Component {
 
     render(){
         return (
-        <div>
+            <Link to={`/users/${user.id}`} key={user.id}>
 
-            {this.props.users.map((user) => <UserDisplay user={user} key={user.name}/> )}
-        </div>
+                <div>
+
+                {this.props.users.map((user) => <UserDisplay user={user} key={user.name}/> )}
+                </div>
+
+            </Link>
+
 
         );
     }

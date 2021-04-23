@@ -5,16 +5,20 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { Provider } from 'react-redux';
-import { createStore, combineReducers } from 'redux';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
 import UsersReducer from './reducers/users_reducer';
+import reduxPromise from 'redux-promise'; 
+
 
 const reducers = combineReducers({
  users: UsersReducer
 }); 
 
+const middlewares = applyMiddleware(reduxPromise);
+
 ReactDOM.render(
 
-  <Provider store={createStore(reducers)}>
+  <Provider store={createStore(reducers, {}, middlewares)}>
     <App />
   </Provider>,
   document.getElementById('root')
