@@ -4,37 +4,29 @@ import { setUsers } from '../../actions';
 import { render } from '@testing-library/react';
 import React, {Component} from 'react';
 import UserDisplay from './UserDisplay';
+import {Link} from 'react-router-dom';
+import { FormH1New, Text, UserWrap } from './SearchElements';
+
 // [...]
 class UserList extends Component {
     componentWillMount() {
         this.props.setUsers();
     } 
 
-
-    render(){
+    render() {
         return (
-            <Link to={`/users/${user.id}`} key={user.id}>
+            <div className="user-list col-sm-7">
+            {this.props.users.map((user) => {
+            return <UserDisplay key={user.name} user={user} />;
+            })}
+            </div>
+            ); 
+        }
 
-                <div>
-
-                {this.props.users.map((user) => <UserDisplay user={user} key={user.name}/> )}
-                </div>
-
-            </Link>
-
-
-        );
-    }
 }
 
 
 
-    function mapDispatchToProps(dispatch) {
-    return bindActionCreators(
-    { setUsers: setUsers },
-    dispatch
-    );
-    }
  
 
 function mapStateToProps(state) {
@@ -43,7 +35,12 @@ function mapStateToProps(state) {
     };
    }
    
-
+   function mapDispatchToProps(dispatch) {
+    return bindActionCreators(
+    { setUsers },
+    dispatch
+    );
+    }
 
    export default connect(mapStateToProps, mapDispatchToProps)
 (UserList);

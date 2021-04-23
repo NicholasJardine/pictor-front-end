@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import Search from '../components/Search/index.jsx'
 
 
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import { setUsers } from '../actions';
-import { render } from '@testing-library/react';
-import User from '../components/user';
-import UserList from '../components/Search/Userlist'
+// import { bindActionCreators } from 'redux';
+// import { connect } from 'react-redux';
+// import { setUsers } from '../actions';
+// import { render } from '@testing-library/react';
+// import User from '../components/user';
+// import UserList from '../components/Search/Userlist'
 // [...]
 
 
@@ -22,7 +22,6 @@ import UserList from '../components/Search/Userlist'
         return (
         <div>
           <Search></Search>
-            <UserList/>
         </div>
     );
     

@@ -1,4 +1,4 @@
-import {Container, Text, FormButton,FormContent, FormH1, FormLabel, FormInput, FormWrap, Form, Icon} from './SearchElements'
+import {Container,FormContent, FormWrap, Form, Icon} from './SearchElements'
 import SearchData from './SearchData'
 
 import UserList from '../Search/Userlist';

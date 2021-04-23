@@ -129,3 +129,16 @@ export const FormWrap = styled.div`
     padding-bottom:40px;
     }
 `;
+
+export const UserWrap = styled.div`
+    height:100px;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+
+    @media screen and (max-width:480px){
+     height:100%;
+    background: #CCA459;
+    padding-bottom:40px;
+    }
+`;
