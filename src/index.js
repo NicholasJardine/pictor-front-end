@@ -12,7 +12,8 @@ import { createHistory as history} from 'history';
 
 
 const reducers = combineReducers({
- users: UsersReducer
+ users: UsersReducer,
+ user: SelectedUserReducer
 }); 
 
 const middlewares = applyMiddleware(reduxPromise);
