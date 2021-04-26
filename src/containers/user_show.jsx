@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { selectUser } from '../actions';
 import UserDisplay from '../components/Search/UserDisplay'
-
+import {Container,FormContent, FormWrap, Form, Icon, FormH1New, Text} from '../components/Search/SearchElements'
 class UsersShow extends Component {
     componentWillMount() {
         if (!this.props.user) {
@@ -18,17 +18,26 @@ class UsersShow extends Component {
     //     }
     //     } 
 
+
     render() {
         if (!this.props.user) {
             return <p>Loading...</p>;
             } 
         return (
-            <div className="user-list col-sm-7">
- <h3>{this.props.user.email}</h3>
- <p>{this.props.user.id}</p>
- 
 
-             </div>
+            <Container>
+            <FormWrap>
+        
+                <Icon to="/"> Golden </Icon>
+                <FormContent>
+                    <Form>
+                    <Form>{this.props.user.email}</Form>
+                    <Text>{this.props.user.id}</Text>
+                     </Form>
+                </FormContent>
+            </FormWrap>
+        
+        </Container>
             ); 
         }
 }
