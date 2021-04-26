@@ -1,13 +1,12 @@
-import {SET_USERS} from '../actions'
+import {SELECT_USER, SET_USERS} from '../actions'
 
-export default function(state, action) {
-    if (state === undefined) {
-    return [];
-    }
+export default function(state= {}, action) {
     switch (action.type) {
     case SET_USERS:
-    return action.payload;
+        return action.payload;
+    case SELECT_USER:
+        return [ action.payload ]; 
     default:
-    return state;
+        return state;
     }
 }

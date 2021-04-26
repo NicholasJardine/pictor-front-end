@@ -11,11 +11,11 @@ import Hero from './components/Hero';
 import News from './components/News';
 import React, { useState, useRef, useEffect } from 'react'
 import Sidebar from './components/Sidebar'
-import UsersShow from './containers/post_show'
+import UsersShow from './containers/user_show'
 // import Home from './pages'
 import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
-import SearchPage from './pages/search'
+import SearchPage from './pages/search';
 import {createBrowserHistory as history} from 'history';
 function App() {
 
@@ -42,6 +42,7 @@ function App() {
       <Route path="/signin" component={SigninPage} exact />
       <Route path="/signup" component={SignupPage} exact />
       <Route path="/search" component={SearchPage} exact />
+      <Route path="/users/:id" component={UsersShow} exact />
       </Switch>
     </Router>
   );

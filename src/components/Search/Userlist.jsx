@@ -17,7 +17,9 @@ class UserList extends Component {
         return (
             <div className="user-list col-sm-7">
             {this.props.users.map((user) => {
-            return <UserDisplay key={user.name} user={user} />;
+            return <Link  to={`/users/${user.id}`} key={user.id}>
+            <UserDisplay key={user.name} user={user} />;
+            </Link>
             })}
             </div>
             ); 
@@ -25,7 +27,11 @@ class UserList extends Component {
 
 }
 
-
+// {this.props.users.map((user) => {
+//     return <Link  to={`/users/${user.id}`} key={user.id}>
+//     <UserDisplay key={user.name} user={user} />;
+//     </Link>
+//     })}
 
  
 
@@ -44,3 +50,42 @@ function mapStateToProps(state) {
 
    export default connect(mapStateToProps, mapDispatchToProps)
 (UserList);
+
+// class UserList extends Component {
+//     componentWillMount() {
+//         this.props.setUsers();
+//     } 
+
+//     render() {
+//         return (
+//             <div className="user-list col-sm-7">
+//             {this.props.users.map((user) => {
+//             return <Link  to={`/users/${user.id}`} key={user.id}>
+//             <UserDisplay key={user.name} user={user} />;
+//             </Link>
+//             })}
+//             </div>
+//             ); 
+//         }
+
+// }
+
+
+
+ 
+
+// function mapStateToProps(state) {
+//     return {
+//     users: state.users
+//     };
+//    }
+   
+//    function mapDispatchToProps(dispatch) {
+//     return bindActionCreators(
+//     { setUsers },
+//     dispatch
+//     );
+//     }
+
+//    export default connect(mapStateToProps, mapDispatchToProps)
+// (UserList);
