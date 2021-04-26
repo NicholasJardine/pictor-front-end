@@ -6,17 +6,13 @@ import { selectUser } from '../actions';
 import UserDisplay from '../components/Search/UserDisplay'
 import {Container,FormContent, FormWrap, Form, Icon, FormH1New, Text} from '../components/Search/SearchElements'
 class UsersShow extends Component {
-    componentWillMount() {
-        if (!this.props.user) {
-            this.props.selectUser(this.props.match.params.id);
-            }
-    } 
 
-    // componentDidMount() {
-    //     if (!this.props.user) {
-    //     this.props.selectUser(this.props.match.params.id);
-    //     }
-    //     } 
+
+    componentDidMount() {
+        if (!this.props.user) {
+        this.props.selectUser(this.props.match.params.id);
+        }
+    } 
 
 
     render() {
@@ -31,7 +27,7 @@ class UsersShow extends Component {
                 <Icon to="/"> Golden </Icon>
                 <FormContent>
                     <Form>
-                    <Form>{this.props.user.email}</Form>
+                    <FormH1New>{this.props.user.email}</FormH1New>
                     <Text>{this.props.user.id}</Text>
                      </Form>
                 </FormContent>

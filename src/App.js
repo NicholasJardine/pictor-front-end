@@ -24,7 +24,7 @@ function App() {
     setIsOpen(!isOpen)
   }
   return (
-    <Router >
+    <Router history={history}>
 
 
               <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
