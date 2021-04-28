@@ -16,7 +16,16 @@ import UsersShow from './containers/user_show'
 import SigninPage from './pages/signin';
 import SignupPage from './pages/signup';
 import SearchPage from './pages/search';
-import {createBrowserHistory as history} from 'history';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+// import {createBrowserHistory as history} from 'history';
+import { Provider } from 'react-redux';
+import UsersReducer from './reducers/users_reducer';
+
+import reduxPromise from 'redux-promise'; 
+import { createHistory as history} from 'history'; 
+
+
+
 function App() {
 
   const [isOpen, setIsOpen] = useState(false)
@@ -24,27 +33,31 @@ function App() {
     setIsOpen(!isOpen)
   }
   return (
-    <Router history={history}>
+
+<Router>
 
 
-              <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
+<Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
 
-      <Navbar toggle={toggle}/>
-      <Hero/>
+<Navbar toggle={toggle}/>
+<Hero/>
 
-      <InfoSection {...homeObjOne} />
-        <InfoSection {...homeObjTwo} />
-        <News/>
-        <Footer/>
+<InfoSection {...homeObjOne} />
+<InfoSection {...homeObjTwo} />
+<News/>
+<Footer/>
 
-        <Switch>
-      {/* <Route path="/" component={Home} exact /> */}
-      <Route path="/signin" component={SigninPage} exact />
-      <Route path="/signup" component={SignupPage} exact />
-      <Route path="/search" component={SearchPage} exact />
-      <Route path="/users/:id" component={UsersShow} exact />
-      </Switch>
-    </Router>
+<Switch>
+{/* <Route path="/" component={Home} exact /> */}
+<Route path="/users/:id" component={UsersShow} exact />
+<Route path="/signin" component={SigninPage} exact />
+<Route path="/signup" component={SignupPage} exact />
+<Route path="/search" component={SearchPage} exact />
+</Switch>
+</Router>
+
+
+
   );
 }
 

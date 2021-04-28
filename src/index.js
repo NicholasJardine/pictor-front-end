@@ -7,17 +7,15 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import UsersReducer from './reducers/users_reducer';
-
 import reduxPromise from 'redux-promise'; 
 import { createHistory as history} from 'history'; 
 
-
 const reducers = combineReducers({
- users: UsersReducer,
-}); 
-
-const middlewares = applyMiddleware(reduxPromise);
-
+  users: UsersReducer,
+ }); 
+ 
+ const middlewares = applyMiddleware(reduxPromise);
+ 
 ReactDOM.render(
 
   <Provider store={createStore(reducers, {}, middlewares)}>

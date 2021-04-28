@@ -9,7 +9,7 @@ import { FormH1New, Text, UserWrap } from './SearchElements';
 
 // [...]
 class UserList extends Component {
-    componentWillMount() {
+    componentDidMount() {
         this.props.setUsers();
     } 
 
