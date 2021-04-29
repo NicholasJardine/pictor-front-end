@@ -5,12 +5,13 @@ export const USER_CREATED = 'POST_CREATED';
 const ROOT_URL = 'https://pictor-api.herokuapp.com/api/v1/users'
 
 
-export function createUser(body) {
+export function createUser(body, callback) {
  const request = fetch(`${ROOT_URL}`, {
  method: 'POST',
  headers: { 'Content-Type': 'application/json' },
  body: JSON.stringify(body)
  }).then(response => response.json())
+ .then(callback);
  return {
  type: USER_CREATED,
  payload: request

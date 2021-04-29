@@ -53,7 +53,7 @@ function App() {
 <Route path="/users/new" exact component={UsersNew} />
 <Route path="/users/:id" component={UsersShow} exact />
 <Route path="/signin" component={SigninPage} exact />
-<Route path="/signup" component={SignupPage} exact />
+<Route path="/signup" component={UsersNew} exact />
 <Route path="/search" component={SearchPage} exact />
 </Switch>
 </Router>

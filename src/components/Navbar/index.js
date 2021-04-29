@@ -52,7 +52,7 @@ const Navbar = ({toggle}) => {
                    <NavBtnLinkTwo primary ={true} to='/search' >Search Actors </NavBtnLinkTwo> 
                 </NavItem>
                 <NavItem>
-                <NavBtnLinkTwo primary={true} to="/signup">Sign Up</NavBtnLinkTwo>                </NavItem>
+                <NavBtnLinkTwo primary={true} to="/users/new">Sign Up</NavBtnLinkTwo>                </NavItem>
             </NavMenu>
             <NavBtn>
                 <NavBtnLink primary={true} to="/signin">Sign In</NavBtnLink>

@@ -89,3 +89,13 @@
   border: 6px solid transparent;
   z-index: 999;
 }
+
+.form-btn {
+  color: #fff;
+  font-size: 20px;
+  padding: 16px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #cf7500, #cca459);
+}
