@@ -1,7 +1,21 @@
 // import users from '../users';
 export const SELECT_USER = 'SELECT_USER'; 
 export const SET_USERS = 'SET_USERS'; 
+export const USER_CREATED = 'POST_CREATED';
 const ROOT_URL = 'https://pictor-api.herokuapp.com/api/v1/users'
+
+
+export function createUser(body) {
+ const request = fetch(`${ROOT_URL}`, {
+ method: 'POST',
+ headers: { 'Content-Type': 'application/json' },
+ body: JSON.stringify(body)
+ }).then(response => response.json())
+ return {
+ type: USER_CREATED,
+ payload: request
+ };
+} 
 
 export function selectUser(id) {
     const promise = fetch(`https://pictor-api.herokuapp.com/api/v1/users/${id}`)

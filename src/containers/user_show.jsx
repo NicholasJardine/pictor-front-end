@@ -33,7 +33,7 @@ class UsersShow extends Component {
         
                 <FormContent>
                     <Form>
-                    <FormH1>Loading</FormH1>
+                    <FormH1>Loading...</FormH1>
                      </Form>
                 </FormContent>
             </FormWrap>
