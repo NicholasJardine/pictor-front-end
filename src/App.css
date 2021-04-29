@@ -99,3 +99,10 @@
   cursor: pointer;
   background: linear-gradient(90deg, #cf7500, #cca459);
 }
+
+.form-input {
+  margin-bottom: 32px;
+  padding: 16px 16px;
+  border: none;
+  border-radius: 4px;
+}

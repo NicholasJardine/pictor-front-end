@@ -1,4 +1,4 @@
-import { SET_USERS, SELECT_USER, USER_CREATED } from '../actions'
+import { SET_USERS, SELECT_USER} from '../actions'
 
 export default function(state = [], action) {
     switch (action.type) {

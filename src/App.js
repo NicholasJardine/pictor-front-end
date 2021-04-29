@@ -23,7 +23,8 @@ import { Provider } from 'react-redux';
 import UsersReducer from './reducers/users_reducer';
 
 import reduxPromise from 'redux-promise'; 
-import { createHistory as history} from 'history'; 
+import { createBrowserHistory } from 'history' 
+import history from './history'
 
 
 
@@ -35,7 +36,7 @@ function App() {
   }
   return (
 
-<Router>
+<Router history={history}>
 
 
 <Sidebar isOpen={isOpen} toggle={toggle}></Sidebar>
