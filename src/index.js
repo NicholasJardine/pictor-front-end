@@ -9,9 +9,12 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import UsersReducer from './reducers/users_reducer';
 import reduxPromise from 'redux-promise'; 
 import { createHistory as history} from 'history'; 
+import { reducer as formReducer } from 'redux-form'; 
+
 
 const reducers = combineReducers({
   users: UsersReducer,
+  form: formReducer
  }); 
  
  const middlewares = applyMiddleware(reduxPromise);
