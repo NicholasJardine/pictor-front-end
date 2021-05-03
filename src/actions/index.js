@@ -6,7 +6,7 @@ const ROOT_URL = 'https://pictor-api.herokuapp.com/api/v1/users'
 
 
 export function createUser(body, callback) {
- const request = fetch(`${ROOT_URL}`, {
+ const request = fetch("https://pictor-api.herokuapp.com/users", {
  method: 'POST',
  headers: { 'Content-Type': 'application/json' },
  body: JSON.stringify(body)

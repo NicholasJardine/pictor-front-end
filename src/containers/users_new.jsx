@@ -45,12 +45,22 @@ class UsersNew extends Component {
  className="form-control"
  label="Password"
  name="password"
+ type="text"
+ component={this.renderField}
+ rows="8"
+ />
+
+<Field
+ className="form-control"
+ label="Password confirmation"
+ name="password_confirmation"
+ type="text"
  component={this.renderField}
  rows="8"
  />
  <button className="btn btn-primary" type="submit"
 disabled={this.props.pristine || this.props.submitting}>
- Create Post
+ Create Account
  </button>
 </form>
  </div>
